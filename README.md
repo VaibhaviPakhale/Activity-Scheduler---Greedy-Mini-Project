@@ -4,10 +4,6 @@
 An interactive web-based tool that demonstrates the Activity Selection Problem using the Greedy Algorithm.
 Users can add activities with start and end times, and the algorithm selects the maximum number of non-overlapping activities.
 
-## 🚀 Live Demo
-
-https://github.com/VaibhaviPakhale/Activity-Scheduler---Greedy-Mini-Project/new/main?readme=1
-
 ## 📌 Features
 
 Add activities with start & end times
