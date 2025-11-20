@@ -1,0 +1,354 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #4b3832;
+    background: #fdf6f0;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    color: #6b4226;
+    margin-bottom: 5px;
+    font-size: 2.2em;
+}
+
+header p {
+    color: #a47148;
+    font-style: italic;
+}
+
+/* Input Section */
+.input-section {
+    background: #f9f3ed;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.input-section h2 {
+    margin-bottom: 15px;
+    color: #5c3d2e;
+}
+
+.input-form {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.input-form input {
+    padding: 10px;
+    border: 2px solid #e4d3c0;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.input-form input:focus {
+    outline: none;
+    border-color: #a47148;
+}
+
+.input-form button {
+    background: #a47148;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.input-form button:hover {
+    background: #8b5e34;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-danger {
+    background: #e07a5f;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.btn-danger:hover {
+    background: #c75d3c;
+}
+
+/* Activities Section */
+.activities-section {
+    background: #f9f3ed;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.activities-section h2 {
+    margin-bottom: 15px;
+    color: #5c3d2e;
+}
+
+.activities-container {
+    min-height: 60px;
+}
+
+.no-activities {
+    color: #a47148;
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+}
+
+.activity-item {
+    background: white;
+    padding: 15px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border-left: 4px solid #e4d3c0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.activity-item.selected {
+    border-left-color: #6b4226;
+    background: #f3e5dc;
+    box-shadow: 0 2px 4px rgba(107, 66, 38, 0.2);
+}
+
+.activity-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.activity-name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.activity-time {
+    color: #666;
+    font-size: 14px;
+}
+
+.remove-btn {
+    background: #e07a5f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.remove-btn:hover {
+    background: #c75d3c;
+}
+
+/* Schedule Button */
+.schedule-section {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.btn-schedule {
+    background: #6b4226;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(107, 66, 38, 0.3);
+}
+
+.btn-schedule:hover {
+    background: #5a3721;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(107, 66, 38, 0.4);
+}
+
+/* Results Section */
+.results-section {
+    background: #fff7f2;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #6b4226;
+}
+
+.results-section h2 {
+    color: #5c3d2e;
+    margin-bottom: 20px;
+}
+
+/* Stats */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.stat-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.stat-number {
+    font-size: 28px;
+    font-weight: bold;
+    color: #5c3d2e;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 12px;
+    color: #a47148;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Selected Activities */
+.selected-activities {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.selected-activities h3 {
+    color: #5c3d2e;
+    margin-bottom: 15px;
+}
+
+.selected-item {
+    background: #e4d3c0;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border-left: 4px solid #6b4226;
+}
+
+.selected-item strong {
+    color: #5c3d2e;
+}
+
+/* Algorithm Steps */
+.algorithm-steps {
+    background: #fdf6f0;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #e07a5f;
+    margin-bottom: 20px;
+}
+
+.algorithm-steps h3 {
+    color: #5c3d2e;
+    margin-bottom: 15px;
+}
+
+.step-item {
+    padding: 8px;
+    margin: 5px 0;
+    background: white;
+    border-radius: 5px;
+    font-size: 14px;
+    border-left: 3px solid #e07a5f;
+    padding-left: 12px;
+}
+
+/* Timeline */
+.timeline-section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.timeline-section h3 {
+    color: #5c3d2e;
+    margin-bottom: 15px;
+}
+
+.timeline-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #a47148;
+}
+
+.timeline-container {
+    border: 1px solid #e4d3c0;
+    border-radius: 5px;
+    min-height: 200px;
+    background: #fdf6f0;
+}
+
+.timeline-bar {
+    height: 30px;
+    margin: 2px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 0 8px;
+    position: relative;
+}
+
+.timeline-bar.selected {
+    background: #6b4226;
+}
+
+.timeline-bar.unselected {
+    background: #e4d3c0;
+    color: #4b3832;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .input-form {
+        grid-template-columns: 1fr;
+    }
+    .stats {
+        grid-template-columns: 1fr;
+    }
+}
